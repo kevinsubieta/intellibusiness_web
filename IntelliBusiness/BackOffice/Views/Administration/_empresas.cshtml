@@ -1,0 +1,45 @@
+﻿@{
+    Layout = null;
+}
+
+@{
+    Layout = null;
+    Model.Capa_Datos.inv_escalar escalar = ViewBag.escalar;
+    byte modo = ViewBag.modo;
+}
+<label class="label-titulo">Propiedad Escalar</label>
+<label class="label-blanco">Nombre</label>
+<input id="nombre_escalar" class="" @( escalar != null ? escalar.nombre : "") />
+<label class="label-blanco">Valor</label>
+<div> <input id="valor_escalar" /><button id="agregar_valor">Agregar</button><button id="actualizar_valor">Actualizar</button> </div>
+<div class="buttons_containers"><label class="label-blanco">Valores</label> <button id="nuevo_valor" class="boton label-blanco">Nuevo</button></div>
+
+@if (escalar != null && escalar.inv_valorescalar != null && escalar.inv_valorescalar.Count > 0)
+{
+    <table id="escalarcontainer" data-id="@escalar.id">
+        @foreach (var valor in escalar.inv_valorescalar)
+        {
+            <tr>
+                <td>
+                    <label data-id="@valor.id" data-accion="0">@valor.valor</label>
+                </td>
+                <td>
+                    <label>quitar</label>
+                </td>
+            </tr>
+        }
+    </table>
+}
+
+<div class="buttons_containers">
+    <button id="cerrar_dialogoescalar" class="boton label-blanco">Cerrar</button>
+    @if (modo == 1)
+    {
+        <button id="registrar_escalar" class="boton label-blanco">Registrar</button>
+    }
+    else
+    {
+        <button id="actualizar_escalar" class="boton label-blanco">Actualizar</button>
+    }
+</div>
+

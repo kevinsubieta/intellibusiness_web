@@ -1,0 +1,299 @@
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\FrontOffice.dll.config
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\FrontOffice.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\FrontOffice.pdb
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\Antlr3.Runtime.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.Core.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\EntityFramework.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\Microsoft.Data.Edm.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\Microsoft.Data.OData.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\Newtonsoft.Json.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Net.Http.Formatting.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Spatial.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Web.Helpers.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Web.Http.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Web.Http.OData.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Web.Http.WebHost.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Web.Mvc.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Web.Optimization.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Web.Razor.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Web.WebPages.Deployment.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Web.WebPages.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Web.WebPages.Razor.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\WebGrease.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\WebMatrix.Data.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\WebMatrix.WebData.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\EntityFramework.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\Newtonsoft.Json.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Net.Http.Formatting.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Web.Helpers.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Web.Http.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Web.Http.WebHost.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Web.Mvc.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Web.Razor.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Web.WebPages.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Web.WebPages.Deployment.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Web.WebPages.Razor.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\WebMatrix.Data.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\WebMatrix.WebData.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.Core.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Web.Http.OData.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\Microsoft.Data.Edm.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\Microsoft.Data.OData.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\System.Spatial.xml
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\es\EntityFramework.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\es\System.Web.Helpers.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\es\System.Web.Http.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\es\System.Web.Mvc.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\es\System.Web.Optimization.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\es\System.Web.Razor.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\es\System.Web.WebPages.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\es\WebMatrix.Data.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\es\Microsoft.Web.WebPages.OAuth.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\es\WebMatrix.WebData.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\es\System.Web.Http.OData.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\de\System.Spatial.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\es\System.Spatial.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\fr\System.Spatial.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\it\System.Spatial.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\ja\System.Spatial.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\ko\System.Spatial.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\ru\System.Spatial.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\obj\Debug\FrontOffice.csprojResolveAssemblyReference.cache
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\obj\Debug\FrontOffice.dll
+C:\Users\minedu\documents\visual studio 2013\Projects\IntelliBusiness\FrontOffice\obj\Debug\FrontOffice.pdb
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\FrontOffice.dll.config
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\FrontOffice.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\FrontOffice.pdb
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\Antlr3.Runtime.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.AspNet.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.Core.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OAuth.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OpenId.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\EntityFramework.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\Microsoft.Data.Edm.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\Microsoft.Data.OData.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\Microsoft.Web.Infrastructure.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\Newtonsoft.Json.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Net.Http.Formatting.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Spatial.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Web.Helpers.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Web.Http.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Web.Http.OData.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Web.Http.WebHost.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Web.Mvc.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Web.Optimization.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Web.Razor.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Web.WebPages.Deployment.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Web.WebPages.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Web.WebPages.Razor.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\WebGrease.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\WebMatrix.Data.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\WebMatrix.WebData.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\EntityFramework.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\Newtonsoft.Json.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Net.Http.Formatting.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Web.Helpers.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Web.Http.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Web.Http.WebHost.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Web.Mvc.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Web.Razor.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Web.WebPages.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Web.WebPages.Deployment.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Web.WebPages.Razor.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\WebMatrix.Data.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\WebMatrix.WebData.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.AspNet.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.Core.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OAuth.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OpenId.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Web.Http.OData.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\Microsoft.Data.Edm.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\Microsoft.Data.OData.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\System.Spatial.xml
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\es\EntityFramework.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\es\System.Net.Http.Formatting.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\es\System.Web.Helpers.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\es\System.Web.Http.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\es\System.Web.Http.WebHost.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\es\System.Web.Mvc.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\es\System.Web.Optimization.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\es\System.Web.Razor.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\es\System.Web.WebPages.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\es\WebMatrix.Data.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\es\Microsoft.Web.WebPages.OAuth.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\es\WebMatrix.WebData.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\es\System.Web.Http.OData.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\de\Microsoft.Data.OData.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\es\Microsoft.Data.OData.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\it\Microsoft.Data.OData.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\de\System.Spatial.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\es\System.Spatial.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\fr\System.Spatial.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\it\System.Spatial.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\ja\System.Spatial.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\ko\System.Spatial.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\ru\System.Spatial.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\zh-Hans\System.Spatial.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\bin\zh-Hant\System.Spatial.resources.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\obj\Debug\FrontOffice.csprojResolveAssemblyReference.cache
+D:\Proyectos\IntelliBusiness\FrontOffice\obj\Debug\FrontOffice.dll
+D:\Proyectos\IntelliBusiness\FrontOffice\obj\Debug\FrontOffice.pdb
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\FrontOffice.dll.config
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\FrontOffice.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\FrontOffice.pdb
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\Antlr3.Runtime.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.AspNet.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.Core.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OAuth.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OpenId.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\EntityFramework.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\EntityFramework.SqlServer.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\Microsoft.Data.Edm.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\Microsoft.Data.OData.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\Microsoft.Web.Infrastructure.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\Model.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\Newtonsoft.Json.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\System.Spatial.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\System.Web.Helpers.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\System.Web.Http.OData.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\System.Web.Mvc.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\System.Web.Optimization.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\System.Web.Razor.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\System.Web.WebPages.Deployment.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\System.Web.WebPages.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\System.Web.WebPages.Razor.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\WebGrease.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\WebMatrix.Data.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\WebMatrix.WebData.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\Model.pdb
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\EntityFramework.xml
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\EntityFramework.SqlServer.xml
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\Newtonsoft.Json.xml
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\System.Web.Helpers.xml
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\System.Web.Mvc.xml
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\System.Web.Razor.xml
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\System.Web.WebPages.xml
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\System.Web.WebPages.Deployment.xml
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\System.Web.WebPages.Razor.xml
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\WebMatrix.Data.xml
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\WebMatrix.WebData.xml
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.AspNet.xml
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.Core.xml
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OAuth.xml
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OpenId.xml
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\System.Web.Http.OData.xml
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\Microsoft.Data.Edm.xml
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\Microsoft.Data.OData.xml
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\System.Spatial.xml
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\es\EntityFramework.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\es\EntityFramework.SqlServer.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\es\System.Web.Helpers.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\es\System.Web.Mvc.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\es\System.Web.Optimization.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\es\System.Web.Razor.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\es\System.Web.WebPages.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\es\WebMatrix.Data.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\es\Microsoft.Web.WebPages.OAuth.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\es\WebMatrix.WebData.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\es\System.Web.Http.OData.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\de\Microsoft.Data.OData.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\es\Microsoft.Data.OData.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\it\Microsoft.Data.OData.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\de\System.Spatial.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\es\System.Spatial.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\fr\System.Spatial.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\it\System.Spatial.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\ja\System.Spatial.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\ko\System.Spatial.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\ru\System.Spatial.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\zh-Hans\System.Spatial.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\bin\zh-Hant\System.Spatial.resources.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\obj\Debug\FrontOffice.csprojResolveAssemblyReference.cache
+D:\Taller y Software\IntelliBusiness\FrontOffice\obj\Debug\FrontOffice.dll
+D:\Taller y Software\IntelliBusiness\FrontOffice\obj\Debug\FrontOffice.pdb

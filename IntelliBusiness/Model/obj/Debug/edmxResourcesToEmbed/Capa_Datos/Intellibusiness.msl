@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="IntellibusinessModelStoreContainer" CdmEntityContainer="IntellibusinessEntities">
+    <EntitySetMapping Name="adm_administrador">
+      <EntityTypeMapping TypeName="IntellibusinessModel.adm_administrador">
+        <MappingFragment StoreEntitySet="adm_administrador">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="baja" ColumnName="baja" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="adm_cliente">
+      <EntityTypeMapping TypeName="IntellibusinessModel.adm_cliente">
+        <MappingFragment StoreEntitySet="adm_cliente">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="gcm" ColumnName="gcm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="adm_empresa">
+      <EntityTypeMapping TypeName="IntellibusinessModel.adm_empresa">
+        <MappingFragment StoreEntitySet="adm_empresa">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="pais" ColumnName="pais" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="adm_empresareferencia">
+      <EntityTypeMapping TypeName="IntellibusinessModel.adm_empresareferencia">
+        <MappingFragment StoreEntitySet="adm_empresareferencia">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="empresa" ColumnName="empresa" />
+          <ScalarProperty Name="referencia" ColumnName="referencia" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="adm_referencia">
+      <EntityTypeMapping TypeName="IntellibusinessModel.adm_referencia">
+        <MappingFragment StoreEntitySet="adm_referencia">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="adm_representante">
+      <EntityTypeMapping TypeName="IntellibusinessModel.adm_representante">
+        <MappingFragment StoreEntitySet="adm_representante">
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+          <ScalarProperty Name="empresa" ColumnName="empresa" />
+          <ScalarProperty Name="baja" ColumnName="baja" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="adm_usuario">
+      <EntityTypeMapping TypeName="IntellibusinessModel.adm_usuario">
+        <MappingFragment StoreEntitySet="adm_usuario">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="loggin" ColumnName="loggin" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="nombres" ColumnName="nombres" />
+          <ScalarProperty Name="apellidos" ColumnName="apellidos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="adm_usuarioreferencia">
+      <EntityTypeMapping TypeName="IntellibusinessModel.adm_usuarioreferencia">
+        <MappingFragment StoreEntitySet="adm_usuarioreferencia">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+          <ScalarProperty Name="referencia" ColumnName="referencia" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="inv_escalar">
+      <EntityTypeMapping TypeName="IntellibusinessModel.inv_escalar">
+        <MappingFragment StoreEntitySet="inv_escalar">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="inv_imagenproducto">
+      <EntityTypeMapping TypeName="IntellibusinessModel.inv_imagenproducto">
+        <MappingFragment StoreEntitySet="inv_imagenproducto">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="producto" ColumnName="producto" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="inv_numerico">
+      <EntityTypeMapping TypeName="IntellibusinessModel.inv_numerico">
+        <MappingFragment StoreEntitySet="inv_numerico">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="sufijo" ColumnName="sufijo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="inv_producto">
+      <EntityTypeMapping TypeName="IntellibusinessModel.inv_producto">
+        <MappingFragment StoreEntitySet="inv_producto">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="inv_productoempresa">
+      <EntityTypeMapping TypeName="IntellibusinessModel.inv_productoempresa">
+        <MappingFragment StoreEntitySet="inv_productoempresa">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="producto" ColumnName="producto" />
+          <ScalarProperty Name="empresa" ColumnName="empresa" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="detalle" ColumnName="detalle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="inv_productonumerico">
+      <EntityTypeMapping TypeName="IntellibusinessModel.inv_productonumerico">
+        <MappingFragment StoreEntitySet="inv_productonumerico">
+          <ScalarProperty Name="producto" ColumnName="producto" />
+          <ScalarProperty Name="propiedadnumerica" ColumnName="propiedadnumerica" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ven_detalleventa">
+      <EntityTypeMapping TypeName="IntellibusinessModel.ven_detalleventa">
+        <MappingFragment StoreEntitySet="ven_detalleventa">
+          <ScalarProperty Name="venta" ColumnName="venta" />
+          <ScalarProperty Name="producto" ColumnName="producto" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mrk_descuento">
+      <EntityTypeMapping TypeName="IntellibusinessModel.mrk_descuento">
+        <MappingFragment StoreEntitySet="mrk_descuento">
+          <ScalarProperty Name="baja" ColumnName="baja" />
+          <ScalarProperty Name="porcentaje" ColumnName="porcentaje" />
+          <ScalarProperty Name="fin" ColumnName="fin" />
+          <ScalarProperty Name="inicio" ColumnName="inicio" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ven_venta">
+      <EntityTypeMapping TypeName="IntellibusinessModel.ven_venta">
+        <MappingFragment StoreEntitySet="ven_venta">
+          <ScalarProperty Name="anulado" ColumnName="anulado" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="cliente" ColumnName="cliente" />
+          <ScalarProperty Name="nro" ColumnName="nro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="mrk_productodescuento" TypeName="IntellibusinessModel.mrk_productodescuento" StoreEntitySet="mrk_productodescuento">
+      <EndProperty Name="inv_productoempresa">
+        <ScalarProperty Name="id" ColumnName="producto" />
+      </EndProperty>
+      <EndProperty Name="mrk_descuento">
+        <ScalarProperty Name="id" ColumnName="descuento" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="inv_valorescalar">
+      <EntityTypeMapping TypeName="IntellibusinessModel.inv_valorescalar">
+        <MappingFragment StoreEntitySet="inv_valorescalar">
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="escalar" ColumnName="escalar" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="inv_productoescalar" TypeName="IntellibusinessModel.inv_productoescalar" StoreEntitySet="inv_productoescalar">
+      <EndProperty Name="inv_valorescalar">
+        <ScalarProperty Name="escalar" ColumnName="escalar" />
+        <ScalarProperty Name="id" ColumnName="valorescalar" />
+      </EndProperty>
+      <EndProperty Name="inv_producto">
+        <ScalarProperty Name="id" ColumnName="producto" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

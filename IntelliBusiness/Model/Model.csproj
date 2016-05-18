@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B106C9EE-55E4-46AE-AC57-17C6B7F41E5B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Model</RootNamespace>
+    <AssemblyName>Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Capa_Datos\adm_administrador.cs">
+      <DependentUpon>Intellibusiness.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Capa_Datos\adm_cliente.cs">
+      <DependentUpon>Intellibusiness.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Capa_Datos\adm_empresa.cs">
+      <DependentUpon>Intellibusiness.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Capa_Datos\adm_empresareferencia.cs">
+      <DependentUpon>Intellibusiness.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Capa_Datos\adm_referencia.cs">
+      <DependentUpon>Intellibusiness.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Capa_Datos\adm_representante.cs">
+      <DependentUpon>Intellibusiness.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Capa_Datos\adm_usuario.cs">
+      <DependentUpon>Intellibusiness.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Capa_Datos\adm_usuarioreferencia.cs">
+      <DependentUpon>Intellibusiness.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Capa_Datos\Intellibusiness.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Intellibusiness.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Capa_Datos\Intellibusiness.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Intellibusiness.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Capa_Datos\Intellibusiness.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Intellibusiness.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Capa_Datos\inv_escalar.cs">
+      <DependentUpon>Intellibusiness.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Capa_Datos\inv_imagenproducto.cs">
+      <DependentUpon>Intellibusiness.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Capa_Datos\inv_numerico.cs">
+      <DependentUpon>Intellibusiness.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Capa_Datos\inv_producto.cs">
+      <DependentUpon>Intellibusiness.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Capa_Datos\inv_productoempresa.cs">
+      <DependentUpon>Intellibusiness.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Capa_Datos\inv_productonumerico.cs">
+      <DependentUpon>Intellibusiness.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Capa_Datos\inv_valorescalar.cs">
+      <DependentUpon>Intellibusiness.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Capa_Datos\mrk_descuento.cs">
+      <DependentUpon>Intellibusiness.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Capa_Datos\ven_detalleventa.cs">
+      <DependentUpon>Intellibusiness.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Capa_Datos\ven_venta.cs">
+      <DependentUpon>Intellibusiness.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Capa_Logica\c_usuario.cs" />
+    <Compile Include="Capa_Logica\c_escalar.cs" />
+    <Compile Include="Capa_Logica\c_numerica.cs" />
+    <Compile Include="Capa_Logica\c_producto.cs" />
+    <Compile Include="Capa_Logica\c_productoempresa.cs" />
+    <Compile Include="Capa_Logica\c_valorescalar.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Capa_Datos\Intellibusiness.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Intellibusiness.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Capa_Datos\Intellibusiness.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Intellibusiness.edmx</DependentUpon>
+      <LastGenOutput>Intellibusiness.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Capa_Datos\Intellibusiness.edmx.diagram">
+      <DependentUpon>Intellibusiness.edmx</DependentUpon>
+    </None>
+    <None Include="Capa_Datos\Intellibusiness.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Intellibusiness.edmx</DependentUpon>
+      <LastGenOutput>Intellibusiness.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Capa_Logica\Imagenes\" />
+    <Folder Include="Capa_Logica\Keys\" />
+    <Folder Include="Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\IntelliStyle.css" />
+    <Content Include="Content\jquery-ui.min.css" />
+    <Content Include="Images\button.png" />
+    <Content Include="Images\lupa.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

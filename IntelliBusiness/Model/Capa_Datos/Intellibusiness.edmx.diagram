@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="db89f8731fcd49beaa6be726fe992c57" Name="Diagram1">
+        <EntityTypeShape EntityType="IntellibusinessModel.adm_administrador" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="IntellibusinessModel.adm_cliente" Width="1.5" PointX="3.75" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IntellibusinessModel.adm_empresa" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="IntellibusinessModel.adm_empresareferencia" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="IntellibusinessModel.adm_referencia" Width="1.5" PointX="0.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="IntellibusinessModel.adm_representante" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="IntellibusinessModel.adm_usuario" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IntellibusinessModel.adm_usuarioreferencia" Width="1.5" PointX="9" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="IntellibusinessModel.inv_escalar" Width="1.5" PointX="3.75" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="IntellibusinessModel.inv_imagenproducto" Width="1.5" PointX="8.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="IntellibusinessModel.inv_numerico" Width="1.5" PointX="3.75" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IntellibusinessModel.inv_producto" Width="1.5" PointX="3.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="IntellibusinessModel.inv_productoempresa" Width="1.5" PointX="6" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="IntellibusinessModel.inv_productonumerico" Width="1.5" PointX="6" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="IntellibusinessModel.ven_detalleventa" Width="1.5" PointX="8.25" PointY="4" IsExpanded="true" />
+        <AssociationConnector Association="IntellibusinessModel.FK__adm_administ__id__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="IntellibusinessModel.FK__adm_cliente__id__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="IntellibusinessModel.FK__adm_empre__empre__5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="IntellibusinessModel.FK__adm_repre__empre__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="IntellibusinessModel.FK__inv_produ__empre__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="IntellibusinessModel.FK__adm_empre__refer__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="IntellibusinessModel.FK__adm_usuar__refer__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="IntellibusinessModel.FK__adm_repre__usuar__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="IntellibusinessModel.FK__adm_usuar__usuar__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="IntellibusinessModel.FK__inv_image__produ__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="IntellibusinessModel.FK__inv_produ__propi__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="IntellibusinessModel.FK__inv_produ__produ__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="IntellibusinessModel.FK__inv_produ__produ__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="IntellibusinessModel.FK__ven_detal__produ__5165187F" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="IntellibusinessModel.mrk_descuento" Width="1.5" PointX="3.75" PointY="26.75" />
+        <EntityTypeShape EntityType="IntellibusinessModel.ven_venta" Width="1.5" PointX="6" PointY="17.25" />
+        <AssociationConnector Association="IntellibusinessModel.FK__ven_venta__clien__534D60F1" />
+        <AssociationConnector Association="IntellibusinessModel.FK__ven_detal__venta__52593CB8" />
+        <AssociationConnector Association="IntellibusinessModel.mrk_productodescuento" />
+        <EntityTypeShape EntityType="IntellibusinessModel.inv_valorescalar" Width="1.5" PointX="6" PointY="14.25" />
+        <AssociationConnector Association="IntellibusinessModel.FK__inv_valor__escal__49C3F6B7" />
+        <AssociationConnector Association="IntellibusinessModel.inv_productoescalar" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,585 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IntellibusinessModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="adm_administrador">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="baja" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="adm_cliente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="gcm" Type="bigint" />
+  </EntityType>
+  <EntityType Name="adm_empresa">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="pais" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="adm_empresareferencia">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="empresa" />
+      <PropertyRef Name="referencia" />
+    </Key>
+    <Property Name="id" Type="tinyint" Nullable="false" />
+    <Property Name="empresa" Type="int" Nullable="false" />
+    <Property Name="referencia" Type="int" Nullable="false" />
+    <Property Name="valor" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="adm_referencia">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="adm_representante">
+    <Key>
+      <PropertyRef Name="usuario" />
+      <PropertyRef Name="empresa" />
+    </Key>
+    <Property Name="usuario" Type="int" Nullable="false" />
+    <Property Name="empresa" Type="int" Nullable="false" />
+    <Property Name="baja" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="adm_usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="loggin" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ci" Type="int" Nullable="false" />
+    <Property Name="nombres" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="apellidos" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="adm_usuarioreferencia">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="usuario" />
+      <PropertyRef Name="referencia" />
+    </Key>
+    <Property Name="id" Type="tinyint" Nullable="false" />
+    <Property Name="usuario" Type="int" Nullable="false" />
+    <Property Name="referencia" Type="int" Nullable="false" />
+    <Property Name="valor" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="inv_escalar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="inv_imagenproducto">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="producto" />
+    </Key>
+    <Property Name="id" Type="tinyint" Nullable="false" />
+    <Property Name="producto" Type="int" Nullable="false" />
+    <Property Name="url" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="inv_numerico">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="sufijo" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="inv_producto">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="inv_productoempresa">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="producto" Type="int" Nullable="false" />
+    <Property Name="empresa" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" />
+    <Property Name="cantidad" Type="int" Nullable="false" />
+    <Property Name="precio" Type="money" Nullable="false" />
+    <Property Name="estado" Type="tinyint" Nullable="false" />
+    <Property Name="detalle" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="inv_productoescalar">
+    <Key>
+      <PropertyRef Name="producto" />
+      <PropertyRef Name="escalar" />
+      <PropertyRef Name="valorescalar" />
+    </Key>
+    <Property Name="producto" Type="int" Nullable="false" />
+    <Property Name="escalar" Type="int" Nullable="false" />
+    <Property Name="valorescalar" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="inv_productonumerico">
+    <Key>
+      <PropertyRef Name="producto" />
+      <PropertyRef Name="propiedadnumerica" />
+    </Key>
+    <Property Name="producto" Type="int" Nullable="false" />
+    <Property Name="propiedadnumerica" Type="int" Nullable="false" />
+    <Property Name="valor" Type="real" Nullable="false" />
+  </EntityType>
+  <EntityType Name="inv_valorescalar">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="escalar" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="escalar" Type="int" Nullable="false" />
+    <Property Name="valor" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="mrk_descuento">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="inicio" Type="bigint" Nullable="false" />
+    <Property Name="fin" Type="bigint" Nullable="false" />
+    <Property Name="porcentaje" Type="tinyint" Nullable="false" />
+    <Property Name="baja" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="mrk_productodescuento">
+    <Key>
+      <PropertyRef Name="producto" />
+      <PropertyRef Name="descuento" />
+    </Key>
+    <Property Name="producto" Type="int" Nullable="false" />
+    <Property Name="descuento" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ven_detalleventa">
+    <Key>
+      <PropertyRef Name="venta" />
+      <PropertyRef Name="producto" />
+    </Key>
+    <Property Name="venta" Type="bigint" Nullable="false" />
+    <Property Name="producto" Type="int" Nullable="false" />
+    <Property Name="cantidad" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ven_venta">
+    <Key>
+      <PropertyRef Name="nro" />
+    </Key>
+    <Property Name="nro" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cliente" Type="int" Nullable="false" />
+    <Property Name="fecha" Type="bigint" Nullable="false" />
+    <Property Name="monto" Type="money" Nullable="false" />
+    <Property Name="anulado" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__adm_administ__id__5AEE82B9">
+    <End Role="adm_usuario" Type="Self.adm_usuario" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="adm_administrador" Type="Self.adm_administrador" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="adm_usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="adm_administrador">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__adm_cliente__id__59FA5E80">
+    <End Role="adm_usuario" Type="Self.adm_usuario" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="adm_cliente" Type="Self.adm_cliente" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="adm_usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="adm_cliente">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__adm_empre__empre__5629CD9C">
+    <End Role="adm_empresa" Type="Self.adm_empresa" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="adm_empresareferencia" Type="Self.adm_empresareferencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="adm_empresa">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="adm_empresareferencia">
+        <PropertyRef Name="empresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__adm_empre__refer__571DF1D5">
+    <End Role="adm_referencia" Type="Self.adm_referencia" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="adm_empresareferencia" Type="Self.adm_empresareferencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="adm_referencia">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="adm_empresareferencia">
+        <PropertyRef Name="referencia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__adm_repre__empre__59063A47">
+    <End Role="adm_empresa" Type="Self.adm_empresa" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="adm_representante" Type="Self.adm_representante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="adm_empresa">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="adm_representante">
+        <PropertyRef Name="empresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__adm_repre__usuar__5812160E">
+    <End Role="adm_usuario" Type="Self.adm_usuario" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="adm_representante" Type="Self.adm_representante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="adm_usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="adm_representante">
+        <PropertyRef Name="usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__adm_usuar__refer__5535A963">
+    <End Role="adm_referencia" Type="Self.adm_referencia" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="adm_usuarioreferencia" Type="Self.adm_usuarioreferencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="adm_referencia">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="adm_usuarioreferencia">
+        <PropertyRef Name="referencia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__adm_usuar__usuar__5441852A">
+    <End Role="adm_usuario" Type="Self.adm_usuario" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="adm_usuarioreferencia" Type="Self.adm_usuarioreferencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="adm_usuario">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="adm_usuarioreferencia">
+        <PropertyRef Name="usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__inv_image__produ__4E88ABD4">
+    <End Role="inv_productoempresa" Type="Self.inv_productoempresa" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="inv_imagenproducto" Type="Self.inv_imagenproducto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inv_productoempresa">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="inv_imagenproducto">
+        <PropertyRef Name="producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__inv_produ__empre__5070F446">
+    <End Role="adm_empresa" Type="Self.adm_empresa" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="inv_productoempresa" Type="Self.inv_productoempresa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="adm_empresa">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="inv_productoempresa">
+        <PropertyRef Name="empresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__inv_produ__produ__4AB81AF0">
+    <End Role="inv_producto" Type="Self.inv_producto" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="inv_productoescalar" Type="Self.inv_productoescalar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inv_producto">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="inv_productoescalar">
+        <PropertyRef Name="producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__inv_produ__produ__4CA06362">
+    <End Role="inv_producto" Type="Self.inv_producto" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="inv_productonumerico" Type="Self.inv_productonumerico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inv_producto">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="inv_productonumerico">
+        <PropertyRef Name="producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__inv_produ__produ__4F7CD00D">
+    <End Role="inv_producto" Type="Self.inv_producto" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="inv_productoempresa" Type="Self.inv_productoempresa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inv_producto">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="inv_productoempresa">
+        <PropertyRef Name="producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__inv_produ__propi__4D94879B">
+    <End Role="inv_numerico" Type="Self.inv_numerico" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="inv_productonumerico" Type="Self.inv_productonumerico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inv_numerico">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="inv_productonumerico">
+        <PropertyRef Name="propiedadnumerica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__inv_productoesca__4BAC3F29">
+    <End Role="inv_valorescalar" Type="Self.inv_valorescalar" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="inv_productoescalar" Type="Self.inv_productoescalar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inv_valorescalar">
+        <PropertyRef Name="id" />
+        <PropertyRef Name="escalar" />
+      </Principal>
+      <Dependent Role="inv_productoescalar">
+        <PropertyRef Name="valorescalar" />
+        <PropertyRef Name="escalar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__inv_valor__escal__49C3F6B7">
+    <End Role="inv_escalar" Type="Self.inv_escalar" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="inv_valorescalar" Type="Self.inv_valorescalar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inv_escalar">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="inv_valorescalar">
+        <PropertyRef Name="escalar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__mrk_produ__descu__5CD6CB2B">
+    <End Role="mrk_descuento" Type="Self.mrk_descuento" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="mrk_productodescuento" Type="Self.mrk_productodescuento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mrk_descuento">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="mrk_productodescuento">
+        <PropertyRef Name="descuento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__mrk_produ__produ__5BE2A6F2">
+    <End Role="inv_productoempresa" Type="Self.inv_productoempresa" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="mrk_productodescuento" Type="Self.mrk_productodescuento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inv_productoempresa">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="mrk_productodescuento">
+        <PropertyRef Name="producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ven_detal__produ__5165187F">
+    <End Role="inv_productoempresa" Type="Self.inv_productoempresa" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ven_detalleventa" Type="Self.ven_detalleventa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inv_productoempresa">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ven_detalleventa">
+        <PropertyRef Name="producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ven_detal__venta__52593CB8">
+    <End Role="ven_venta" Type="Self.ven_venta" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ven_detalleventa" Type="Self.ven_detalleventa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ven_venta">
+        <PropertyRef Name="nro" />
+      </Principal>
+      <Dependent Role="ven_detalleventa">
+        <PropertyRef Name="venta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ven_venta__clien__534D60F1">
+    <End Role="adm_cliente" Type="Self.adm_cliente" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ven_venta" Type="Self.ven_venta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="adm_cliente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ven_venta">
+        <PropertyRef Name="cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="IntellibusinessModelStoreContainer">
+    <EntitySet Name="adm_administrador" EntityType="Self.adm_administrador" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="adm_cliente" EntityType="Self.adm_cliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="adm_empresa" EntityType="Self.adm_empresa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="adm_empresareferencia" EntityType="Self.adm_empresareferencia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="adm_referencia" EntityType="Self.adm_referencia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="adm_representante" EntityType="Self.adm_representante" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="adm_usuario" EntityType="Self.adm_usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="adm_usuarioreferencia" EntityType="Self.adm_usuarioreferencia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="inv_escalar" EntityType="Self.inv_escalar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="inv_imagenproducto" EntityType="Self.inv_imagenproducto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="inv_numerico" EntityType="Self.inv_numerico" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="inv_producto" EntityType="Self.inv_producto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="inv_productoempresa" EntityType="Self.inv_productoempresa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="inv_productoescalar" EntityType="Self.inv_productoescalar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="inv_productonumerico" EntityType="Self.inv_productonumerico" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="inv_valorescalar" EntityType="Self.inv_valorescalar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mrk_descuento" EntityType="Self.mrk_descuento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mrk_productodescuento" EntityType="Self.mrk_productodescuento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ven_detalleventa" EntityType="Self.ven_detalleventa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ven_venta" EntityType="Self.ven_venta" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__adm_administ__id__5AEE82B9" Association="Self.FK__adm_administ__id__5AEE82B9">
+      <End Role="adm_usuario" EntitySet="adm_usuario" />
+      <End Role="adm_administrador" EntitySet="adm_administrador" />
+    </AssociationSet>
+    <AssociationSet Name="FK__adm_cliente__id__59FA5E80" Association="Self.FK__adm_cliente__id__59FA5E80">
+      <End Role="adm_usuario" EntitySet="adm_usuario" />
+      <End Role="adm_cliente" EntitySet="adm_cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__adm_empre__empre__5629CD9C" Association="Self.FK__adm_empre__empre__5629CD9C">
+      <End Role="adm_empresa" EntitySet="adm_empresa" />
+      <End Role="adm_empresareferencia" EntitySet="adm_empresareferencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK__adm_empre__refer__571DF1D5" Association="Self.FK__adm_empre__refer__571DF1D5">
+      <End Role="adm_referencia" EntitySet="adm_referencia" />
+      <End Role="adm_empresareferencia" EntitySet="adm_empresareferencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK__adm_repre__empre__59063A47" Association="Self.FK__adm_repre__empre__59063A47">
+      <End Role="adm_empresa" EntitySet="adm_empresa" />
+      <End Role="adm_representante" EntitySet="adm_representante" />
+    </AssociationSet>
+    <AssociationSet Name="FK__adm_repre__usuar__5812160E" Association="Self.FK__adm_repre__usuar__5812160E">
+      <End Role="adm_usuario" EntitySet="adm_usuario" />
+      <End Role="adm_representante" EntitySet="adm_representante" />
+    </AssociationSet>
+    <AssociationSet Name="FK__adm_usuar__refer__5535A963" Association="Self.FK__adm_usuar__refer__5535A963">
+      <End Role="adm_referencia" EntitySet="adm_referencia" />
+      <End Role="adm_usuarioreferencia" EntitySet="adm_usuarioreferencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK__adm_usuar__usuar__5441852A" Association="Self.FK__adm_usuar__usuar__5441852A">
+      <End Role="adm_usuario" EntitySet="adm_usuario" />
+      <End Role="adm_usuarioreferencia" EntitySet="adm_usuarioreferencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK__inv_image__produ__4E88ABD4" Association="Self.FK__inv_image__produ__4E88ABD4">
+      <End Role="inv_productoempresa" EntitySet="inv_productoempresa" />
+      <End Role="inv_imagenproducto" EntitySet="inv_imagenproducto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__inv_produ__empre__5070F446" Association="Self.FK__inv_produ__empre__5070F446">
+      <End Role="adm_empresa" EntitySet="adm_empresa" />
+      <End Role="inv_productoempresa" EntitySet="inv_productoempresa" />
+    </AssociationSet>
+    <AssociationSet Name="FK__inv_produ__produ__4AB81AF0" Association="Self.FK__inv_produ__produ__4AB81AF0">
+      <End Role="inv_producto" EntitySet="inv_producto" />
+      <End Role="inv_productoescalar" EntitySet="inv_productoescalar" />
+    </AssociationSet>
+    <AssociationSet Name="FK__inv_produ__produ__4CA06362" Association="Self.FK__inv_produ__produ__4CA06362">
+      <End Role="inv_producto" EntitySet="inv_producto" />
+      <End Role="inv_productonumerico" EntitySet="inv_productonumerico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__inv_produ__produ__4F7CD00D" Association="Self.FK__inv_produ__produ__4F7CD00D">
+      <End Role="inv_producto" EntitySet="inv_producto" />
+      <End Role="inv_productoempresa" EntitySet="inv_productoempresa" />
+    </AssociationSet>
+    <AssociationSet Name="FK__inv_produ__propi__4D94879B" Association="Self.FK__inv_produ__propi__4D94879B">
+      <End Role="inv_numerico" EntitySet="inv_numerico" />
+      <End Role="inv_productonumerico" EntitySet="inv_productonumerico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__inv_productoesca__4BAC3F29" Association="Self.FK__inv_productoesca__4BAC3F29">
+      <End Role="inv_valorescalar" EntitySet="inv_valorescalar" />
+      <End Role="inv_productoescalar" EntitySet="inv_productoescalar" />
+    </AssociationSet>
+    <AssociationSet Name="FK__inv_valor__escal__49C3F6B7" Association="Self.FK__inv_valor__escal__49C3F6B7">
+      <End Role="inv_escalar" EntitySet="inv_escalar" />
+      <End Role="inv_valorescalar" EntitySet="inv_valorescalar" />
+    </AssociationSet>
+    <AssociationSet Name="FK__mrk_produ__descu__5CD6CB2B" Association="Self.FK__mrk_produ__descu__5CD6CB2B">
+      <End Role="mrk_descuento" EntitySet="mrk_descuento" />
+      <End Role="mrk_productodescuento" EntitySet="mrk_productodescuento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__mrk_produ__produ__5BE2A6F2" Association="Self.FK__mrk_produ__produ__5BE2A6F2">
+      <End Role="inv_productoempresa" EntitySet="inv_productoempresa" />
+      <End Role="mrk_productodescuento" EntitySet="mrk_productodescuento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ven_detal__produ__5165187F" Association="Self.FK__ven_detal__produ__5165187F">
+      <End Role="inv_productoempresa" EntitySet="inv_productoempresa" />
+      <End Role="ven_detalleventa" EntitySet="ven_detalleventa" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ven_detal__venta__52593CB8" Association="Self.FK__ven_detal__venta__52593CB8">
+      <End Role="ven_venta" EntitySet="ven_venta" />
+      <End Role="ven_detalleventa" EntitySet="ven_detalleventa" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ven_venta__clien__534D60F1" Association="Self.FK__ven_venta__clien__534D60F1">
+      <End Role="adm_cliente" EntitySet="adm_cliente" />
+      <End Role="ven_venta" EntitySet="ven_venta" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

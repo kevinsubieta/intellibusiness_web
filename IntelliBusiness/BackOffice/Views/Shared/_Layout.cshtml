@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - Mi aplicación ASP.NET MVC</title>
+        <link href="~/Content/jquery-ui.min.css" rel="stylesheet" />
+        <link href="~/Content/BackOfficeStyles.css" rel="stylesheet" />        
+    </head>
+    <body class="body-login">
+        <div id="datos" data-userid="" data-root="@Url.Content("~")" ></div>
+        
+        <div id="render">
+            @RenderBody()
+        </div>       
+
+        <script src=@Url.Content("~/Scripts/jquery-1.11.3.min.js")></script>
+        <script src=@Url.Content("~/Scripts/jquery-ui.min.js")></script>
+        <script src=@Url.Content("~/Scripts/jquery.blockUI.js")></script>
+        <script src=@Url.Content("~/Scripts/BackOfficeFunctions.js")></script>
+        <script src=@Url.Content("~/Scripts/BackOfficeListeners.js")></script>
+    </body>
+</html>

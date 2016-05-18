@@ -1,0 +1,244 @@
+﻿body {
+    margin: 0;
+}
+
+.body-login {
+    background-color: #063852;
+}
+
+.label-titulo {
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 19px;
+    font-family: 'Verdana', sans-serif;
+    padding: 10px;
+}
+
+.label-negro {
+    font-size: 15px;
+    font-family: 'Verdana', sans-serif;
+}
+
+.label-blanco {
+    color: white;
+    font-size: 15px;
+    font-family: 'Verdana', sans-serif;
+}
+
+.label-blanco-grande {
+    color: white;
+    font-size: 19px;
+    font-family: 'Verdana', sans-serif;
+}
+
+.label-amarillo {
+    color: #e6df44;
+    font-size: 13px;
+    font-family: 'Verdana', sans-serif;
+}
+
+.login_container {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.box {
+    display: inline-block;
+    background-color: #011a27;
+    border-radius: 7px;
+    padding: 30px;
+}
+
+.label_login {
+    color: white;
+}
+
+.input {
+    width: 220px;
+    display: block;
+    border-radius: 6px;
+    border-style: none;
+    padding:12px 15px;
+    margin: 15px;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Verdana', sans-serif;
+}
+
+#combobox {
+    position:relative;
+}
+
+#rol {
+    display: block;
+    background-color: white;
+    border-style: none;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 12px 15px;
+    width: 250px;
+    margin: 15px;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Verdana', sans-serif;
+    background-position: 92% 50%;
+    background-size: 7px;
+    background-image: url("../Images/flecha_combo.png");
+    background-repeat: no-repeat;
+}
+
+#options {
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: 38px;
+    background-color: white;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    width: 250px;
+}
+
+#options > label {
+    display: block;
+    font-size: 16px;
+    font-family: 'Verdana', sans-serif;
+    padding: 7px 0;
+    cursor: pointer;
+}
+
+#options > label:last-child {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#options > label:hover {
+    color: white;
+    background-color: #f0810f;
+}
+
+#error-login {
+    display: none;
+    margin-bottom: 8px;
+}
+
+#iniciarsesion {
+    width: 250px;
+    margin: 15px;
+    margin-top: 0;
+    padding: 12px 10px;
+}
+
+.boton {
+    background-color: #f0810f;
+    border-style: none;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Verdana', sans-serif;
+}
+
+#iniciar_sesion:hover {
+    /*background-color: #e6df44;*/
+}
+
+/*__________________________administradores styles__________________--*/
+
+.menu_horizontal a { text-decoration: none; display: inline-block; }            
+
+.menu_horizontal {
+	text-align:left;
+	background-color: #011a27;
+}
+
+.menu_horizontal a {
+	padding: 15px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Verdana', sans-serif;
+    cursor: pointer;
+}
+
+#saliradm {
+    float: right;
+    background-color: #f0810f;
+}
+
+.menu_horizontal a:hover {
+	background-color: #063852;
+}
+
+/*____________________________________Propiedades style_________________________*/
+
+.propiedades_container {
+    text-align: center;
+}
+
+.boxblueberry {
+    display: inline-block;
+    background: #063852;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 40px 20px;
+    vertical-align: top;
+}
+
+.buttonstd {
+    text-align: right;
+}
+
+#escalaresform {}
+
+#escalaresform > tbody > tr {}
+
+#escalaresform > tbody > tr > td {
+    padding: 7px 0;
+}
+
+.dialogo {
+	background-color: #063852;                  
+}
+
+.dialogo button {
+    background-color: #f0810f;
+    border-style: none;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Verdana', sans-serif;
+}
+
+.dialogo input {
+    width: 220px;
+    display: block;
+    border-radius: 6px;
+    border-style: none;
+    padding:12px 15px;
+    /*margin: 15px;*/
+    outline: none;
+    font-size: 15px;
+    font-family: 'Verdana', sans-serif;
+}
+
+.dialogo .ui-dialog-titlebar { display: none; }
+
+/*.dialogo .ui-dialog-title { }
+
+.dialogo .ui-dialog-titlebar-close { }
+
+.dialogo ui-dialog-content { }
+
+.dialogo .ui-dialog-buttonpane { }
+
+.dialogo .ui-dialog-buttonset { }*/
+
+.tabla {
+    width: 100%;
+    background-color: white;
+}

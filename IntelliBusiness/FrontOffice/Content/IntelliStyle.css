@@ -1,0 +1,86 @@
+﻿body {
+    margin: 0;
+}
+
+.label-header {
+    font-family:cursive;
+    font-size: 16px;
+    color: white;
+}
+
+.label-header-negro {
+    font-size: 12px;
+}
+
+.header {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.header_item {
+    vertical-align:middle;
+}
+
+.header button {
+    background-color: black;
+    border-style: none;
+    cursor: pointer;
+    padding: 7px;
+    outline-color: purple;
+}
+
+.header button:hover {
+    background-color: purple;
+}
+
+.header input {
+    width: 20%;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+.header img {
+    width: 33px;
+    cursor: pointer;
+    margin-right: 7px;
+}
+
+.logout {
+    display: none;
+}
+
+#content_container {
+    display: inline-block;
+    position: relative;
+}
+
+#img_btn_responsive {
+    display: none;
+}
+
+#items_container {
+    display: inline-block;
+}
+
+@media screen and (max-width: 500px){
+    #img_btn_responsive {
+        display: inline-block;
+    }
+
+    #items_container {
+        right: 0;  
+        display: none;
+        overflow: auto;
+        text-align: left; 
+        position: absolute;
+        background-color: black;
+        border: 1px solid purple;
+    }
+
+    .header button {
+        white-space: nowrap;
+        text-align: left;
+    }
+}

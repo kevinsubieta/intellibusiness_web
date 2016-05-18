@@ -1,0 +1,67 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "_escalar";
+    Model.Capa_Datos.inv_escalar escalar = ViewBag.escalar;
+    byte modo = ViewBag.modo;
+}
+
+<table id="escalarform">
+    <tr>
+        <td>
+            <label class="label-blanco-grande">Propiedad Escalar</label>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <label class="label-blanco">Nombre</label>
+            <input id="nombreescalar" value="@( escalar!= null? escalar.nombre :"" )"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label class="label-blanco">Valores</label>
+        </td>
+    </tr>
+    <tr>
+        <td class="buttonstd">
+            <button id="nuevovalor">Nuevo</button>
+        </td>
+    </tr>
+    <tr>
+        <td id="valorescontainer">
+            @if (escalar != null && escalar.inv_valorescalar != null && escalar.inv_valorescalar.Count > 0)
+            {
+                <table class="tabla">
+                    <tbody id="bodytabla">
+                        @foreach (var valor in escalar.inv_valorescalar)
+                        {
+                            <tr>
+                                <td>
+                                    <label class="label-negro valor" data-values="@( valor.id+","+valor.valor+","+"0")">@valor.valor</label>
+                                </td>
+                                <td>
+                                    <button class="actualizarvalor">Actualizar</button>
+                                    <button class="quitarvalor">Quitar</button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                    
+                </table>
+            }
+        </td>
+    </tr>
+    <tr>
+        <td class="buttonstd">
+            <button id="cerrarescalar">Cerrar</button>
+            @if (modo == 1)//registrar
+            {
+                <button id="registrarescalar">Registrar</button>
+            }
+            else
+            {
+                <button id="actualizarescalar" data-id="@escalar.id" >Actualizar</button>
+            }
+        </td>       
+    </tr>
+</table>

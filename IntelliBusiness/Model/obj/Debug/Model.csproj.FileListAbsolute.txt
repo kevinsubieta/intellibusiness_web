@@ -1,0 +1,12 @@
+D:\Taller y Software\IntelliBusiness\Model\bin\Debug\Model.dll.config
+D:\Taller y Software\IntelliBusiness\Model\bin\Debug\Model.dll
+D:\Taller y Software\IntelliBusiness\Model\bin\Debug\Model.pdb
+D:\Taller y Software\IntelliBusiness\Model\bin\Debug\EntityFramework.dll
+D:\Taller y Software\IntelliBusiness\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Taller y Software\IntelliBusiness\Model\bin\Debug\EntityFramework.xml
+D:\Taller y Software\IntelliBusiness\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Taller y Software\IntelliBusiness\Model\bin\Debug\es\EntityFramework.resources.dll
+D:\Taller y Software\IntelliBusiness\Model\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+D:\Taller y Software\IntelliBusiness\Model\obj\Debug\Model.dll
+D:\Taller y Software\IntelliBusiness\Model\obj\Debug\Model.pdb
+D:\Taller y Software\IntelliBusiness\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

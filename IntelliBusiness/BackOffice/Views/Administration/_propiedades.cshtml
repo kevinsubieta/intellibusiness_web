@@ -1,0 +1,57 @@
+﻿@{
+    Layout = null;
+    List<Model.Capa_Datos.inv_escalar> escalares = ViewBag.escalares;
+    List<Model.Capa_Datos.inv_numerico> numericos = ViewBag.numericos;
+}
+<div class="propiedades_container">
+    <div class="boxblueberry">
+        <table id="escalaresform">
+            <tr>
+                <td>
+                    <label class="label-blanco-grande">Propiedades Escalares</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="buttonstd">
+                    <button id="nuevoescalar" class="boton">nuevo</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @if (escalares != null && escalares.Count > 0)
+                    {
+                        <table class="tabla">
+                            @foreach (var escalar in escalares)
+                            {
+                                <tr>
+                                    <td><label class="label-negro">@escalar.nombre</label></td>
+                                    <td>
+                                        <button class="boton">Ver</button>
+                                        <button id="@escalar.id" class="boton actualizarescalar">Actualizar</button>
+                                    </td>
+                                </tr>
+                            }
+                        </table>
+                    }
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="boxblueberry">
+        <label class="label-titulo">Propiedades Numericas</label>
+        <button id="nuevo_numerico" class="boton label-blanco">nuevo</button>
+        @if (numericos != null && numericos.Count > 0)
+        {
+            <table>
+                @foreach (var numerico in numericos)
+                {
+                    <tr>
+                        <td><label>@numerico.nombre</label></td>
+                        <td><label>ver</label></td>
+                        <td><label>modificar</label></td>
+                    </tr>
+                }
+            </table>
+        }
+    </div>
+</div>

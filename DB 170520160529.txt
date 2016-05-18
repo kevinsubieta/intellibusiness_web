@@ -1,0 +1,262 @@
+--create database Intellibusiness
+use Intellibusiness
+
+CREATE TABLE inv_escalar
+(
+	id int not null primary key identity(0,1),
+	nombre varchar(50) not null
+)
+
+CREATE TABLE inv_valorescalar
+(
+	id int not null,
+	escalar int not null,
+	valor varchar(50) not null,
+	primary key (id,escalar)
+)
+
+CREATE TABLE inv_productoescalar
+(
+	producto int not null,
+	escalar int not null,
+	valorescalar int not null,
+	primary key (producto,escalar,valorescalar)
+)
+
+CREATE TABLE inv_numerico
+(
+	id int not null primary key identity(0,1),
+	nombre varchar(50) not null,	
+	sufijo varchar(30) not null,
+)
+
+CREATE TABLE inv_productonumerico
+(
+	producto int not null,
+	propiedadnumerica int not null,
+	valor real not null,
+	primary key (producto,propiedadnumerica)
+)
+
+CREATE TABLE inv_producto
+(
+	id int not null primary key identity(0,1),
+	nombre varchar(50) not null,--nombre formal marca-nombre-modelo-version
+)
+
+CREATE TABLE inv_imagenproducto
+(
+	id tinyint not null,
+	producto int not null,
+	url varchar(100) not null
+	primary key (id,producto)
+)
+
+CREATE TABLE inv_productoempresa
+(
+	id int not null primary key identity(0,1),
+	producto int not null,
+	empresa int not null,
+	nombre varchar(50),
+	cantidad int not null,
+	precio money not null,
+	estado tinyint not null,--0 de fabrica,1 usado,2 mal estado o no funciona
+	detalle varchar(100),
+)
+
+CREATE TABLE adm_empresa 
+(
+	id int not null primary key identity(0,1),
+	nombre varchar(50) not null,
+	pais varchar(50) not null,
+)
+
+CREATE TABLE ven_detalleventa
+(
+	venta bigint not null,
+	producto int not null,
+	cantidad int not null,
+	primary key (venta,producto)
+)
+
+CREATE TABLE ven_venta
+(
+	nro bigint not null primary key identity(0,1),
+	cliente int not null,
+	fecha bigint not null,
+	monto money not null,
+	anulado bit not null
+)
+
+CREATE TABLE adm_usuario 
+(
+	id int not null primary key identity(0,1),
+	loggin varchar(50) not null,--los paswords se guardaran en archivos alternos
+	ci int not null,
+	nombres varchar(50) not null,
+	apellidos varchar(50) not null,
+)
+
+CREATE TABLE adm_usuarioreferencia
+(
+	id tinyint not null,
+	usuario int not null,
+	referencia int not null,
+	valor varchar(100) not null
+	primary key (id,usuario,referencia)
+)
+
+CREATE TABLE adm_empresareferencia
+(
+	id tinyint not null,
+	empresa int not null,
+	referencia int not null,
+	valor varchar(100) not null
+	primary key (id,empresa,referencia)
+)
+
+CREATE TABLE adm_referencia
+(
+	id int not null primary key identity(0,1),
+	nombre varchar(50) not null
+)
+
+CREATE TABLE adm_cliente
+(
+	id int not null primary key,
+	gcm bigint
+)
+
+CREATE TABLE adm_representante 
+(
+	usuario int not null,
+	empresa int not null,
+	baja bit not null,
+	primary key (empresa,usuario)
+)
+
+CREATE TABLE adm_administrador
+(
+	id int not null primary key,
+	baja bit not null
+)
+
+CREATE TABLE mrk_productodescuento
+(
+	producto int not null,
+	descuento int not null,
+	primary key (producto,descuento)
+)
+
+CREATE TABLE mrk_descuento
+(
+	id int not null primary key identity(0,1),
+	descripcion varchar(50) not null,
+	inicio bigint not null,
+	fin bigint not null,
+	porcentaje tinyint not null,-- 0% - 100%
+	baja bit not null	
+)
+
+alter table inv_valorescalar add foreign key (escalar) references inv_escalar(id)
+on update cascade on delete cascade
+
+alter table inv_productoescalar add foreign key (producto) references inv_producto(id)
+on update cascade on delete cascade
+alter table inv_productoescalar add foreign key (valorescalar,escalar) references inv_valorescalar(id,escalar)
+on update cascade on delete cascade
+
+alter table inv_productonumerico add foreign key (producto) references inv_producto(id)
+on update cascade on delete cascade
+alter table inv_productonumerico add foreign key (propiedadnumerica) references inv_numerico(id)
+on update cascade on delete cascade
+
+alter table inv_imagenproducto add foreign key (producto) references inv_productoempresa(id)
+on update cascade on delete cascade
+
+alter table inv_productoempresa add foreign key (producto) references inv_producto(id)
+on update cascade on delete cascade
+alter table inv_productoempresa add foreign key (empresa) references adm_empresa(id)
+on update cascade on delete cascade
+
+alter table ven_detalleventa add foreign key (producto) references inv_productoempresa(id)
+on update cascade on delete cascade
+alter table ven_detalleventa add foreign key (venta) references ven_venta(nro)
+on update cascade on delete cascade
+
+alter table ven_venta add foreign key (cliente) references adm_cliente(id)
+on update cascade on delete cascade
+
+alter table adm_usuarioreferencia add foreign key (usuario) references adm_usuario(id)
+on update cascade on delete cascade
+alter table adm_usuarioreferencia add foreign key (referencia) references adm_referencia(id)
+on update cascade on delete cascade
+
+alter table adm_empresareferencia add foreign key (empresa) references adm_empresa(id)
+on update cascade on delete cascade
+alter table adm_empresareferencia add foreign key (referencia) references adm_referencia(id)
+on update cascade on delete cascade
+
+alter table adm_representante add foreign key (usuario) references adm_usuario(id)
+on update cascade on delete cascade
+alter table adm_representante add foreign key (empresa) references adm_empresa(id)
+on update cascade on delete cascade
+
+alter table adm_cliente add foreign key (id) references adm_usuario(id)
+on update cascade on delete cascade
+alter table adm_administrador add foreign key (id) references adm_usuario(id)
+on update cascade on delete cascade
+
+alter table mrk_productodescuento add foreign key (producto) references inv_productoempresa(id)
+on update cascade on delete cascade
+alter table mrk_productodescuento add foreign key (descuento) references mrk_descuento(id)
+on update cascade on delete cascade
+
+--CREATE TRIGGER insert_producto on ven_detalleventa
+--FOR INSERT 
+--AS
+-- DECLARE cant int;
+-- DECLARE id int;
+-- select @cant = cantidad, @id = producto from inserted;
+-- update inv_productoempresa set cantidad = cantidad - @cant where producto = id
+--GO
+
+insert into inv_producto values ('TOTAL VISION X 30 COMP C/BLISTER')
+insert into inv_producto values ('TOTAL VISION X 60 COMP FCO')
+insert into inv_producto values ('ALUROX  10 ML X 1 FCO')
+insert into inv_producto values ('OFTANAF PLUS X 1 FCO SOL OFT')
+insert into inv_producto values ('OPTIGEN 0.3% X 1 FCO')
+insert into inv_producto values ('OPTIMAX 5 ML X 1 FCO SOL OFT')
+
+insert into adm_empresa values ('TERBOL S.A.','paraguay')
+
+insert into inv_productoempresa values (0,0,'TOTAL VISION X 30 COMP C/BLISTER',30,5,0,'detalle')
+insert into inv_productoempresa values (1,0,'TOTAL VISION X 60 COMP FCO',60,6,0,'detalle')
+insert into inv_productoempresa values (2,0,'ALUROX  10 ML X 1 FCO',70,7,0,'detalle')
+insert into inv_productoempresa values (3,0,'OFTANAF PLUS X 1 FCO SOL OFT',80,8,0,'detalle')
+insert into inv_productoempresa values (4,0,'OPTIGEN 0.3% X 1 FCO',90,9,0,'detalle')
+insert into inv_productoempresa values (5,0,'OPTIMAX 5 ML X 1 FCO SOL OFT',100,10,0,'detalle')
+
+insert into adm_referencia values ('telefono')
+insert into adm_referencia values ('direccion')
+
+insert into adm_usuario values ('brianroy',12345,'brian roy','sagredo lijeron')
+insert into adm_usuario values ('kevinbruce',54321,'kevin bruce','subieta burgos')
+
+insert into adm_administrador values (0,0)
+insert into adm_administrador values (1,0)
+
+insert into adm_representante values (0,0,0)
+insert into adm_representante values (1,0,0)
+
+insert into adm_cliente values (0,1029384756)
+insert into adm_cliente values (1,6574839201)
+
+select * from inv_producto
+select * from inv_productoempresa
+select * from adm_empresa
+select * from adm_referencia
+select * from adm_usuario
+select * from adm_representante
+select * from adm_administrador
+select * from adm_cliente
